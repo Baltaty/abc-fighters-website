@@ -1,7 +1,20 @@
 "use client";
 import useEmblaCarousel from "embla-carousel-react";
 
-const matches = [
+type Match = {
+  competition: string;
+  date: string;
+  homeTeam: string;
+  roadTeam: string;
+  homeLogo: string;
+  roadLogo: string;
+  stadium: string;
+  channel: { label: string; href: string } | null;
+  ticketLink: string;
+  previewLink: string;
+};
+
+const matches: Match[] = [
   {
     competition: "Championnat de Côte d'Ivoire",
     date: "À venir",
