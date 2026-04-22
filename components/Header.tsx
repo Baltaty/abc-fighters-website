@@ -103,7 +103,12 @@ export default function Header() {
       <div className="alignwide">
         <div className="flex-columns medium-flex header-wrapper">
           <div className="top-menu-wrapper left-wrapper">
-            <a className="burger-menu hide-on-large-only" onClick={() => setMobileNavOpen(true)} aria-label="Menu" style={{ cursor: "pointer" }}>
+            <a
+              className="burger-menu hide-on-large-only"
+              onClick={() => setMobileNavOpen(true)}
+              onTouchEnd={(e) => { e.preventDefault(); setMobileNavOpen(true); }}
+              aria-label="Menu"
+            >
               Menu
             </a>
             <ul id="left-menu" className="top-menu hide-on-med-and-down">

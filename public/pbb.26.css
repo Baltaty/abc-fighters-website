@@ -2532,7 +2532,8 @@ header.site-header .site-logo {
   margin: 0 auto;
 }
 header.site-header a.burger-menu,
-header.site-header li.burger-menu > a {
+header.site-header li.burger-menu > a,
+header.site-header button.burger-menu {
   display: inline-block;
   background: #FFFFFF;
   color: #0E0E0E;
@@ -2540,6 +2541,10 @@ header.site-header li.burger-menu > a {
   border-radius: 36px;
   padding: 0 15px;
   margin: 0 10px;
+  border: none;
+  font-family: var(--font-slam-dunk), sans-serif;
+  font-size: inherit;
+  cursor: pointer;
 }
 header.site-header a.burger-menu:after,
 header.site-header li.burger-menu > a:after {
@@ -4204,7 +4209,7 @@ table.standings .logo {
   height: 200px;
   aspect-ratio: 1;
   background: #181818;
-  padding: 30px;
+  padding: 10px;
   display: flex;
   align-items: center;
 }

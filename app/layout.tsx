@@ -4,8 +4,8 @@ import "./globals.css";
 
 const slamDunk = localFont({
   src: [
-    { path: "../SlamDunk.otf", format: "opentype" },
-    { path: "../SlamDunk.ttf", format: "truetype" },
+    { path: "./fonts/SlamDunk.otf" },
+    { path: "./fonts/SlamDunk.ttf" },
   ],
   variable: "--font-slam-dunk",
   display: "swap",

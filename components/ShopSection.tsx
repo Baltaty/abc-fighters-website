@@ -4,15 +4,21 @@ import useEmblaCarousel from "embla-carousel-react";
 const shopItems = [
   {
     href: "#",
-    image: "/maillot-euroleague-domicile-2526-600x698.png",
+    image: "/maillots/maillot-domicile-abc.jpg",
     tags: ["Tenues officielles"],
     title: "Maillot Domicile ABC",
   },
   {
     href: "#",
-    image: "/maillot-euroleague-domicile-2526-600x698.png",
+    image: "/maillots/maillot-exterieur-abc.jpg",
     tags: ["Tenues officielles"],
     title: "Maillot Extérieur ABC",
+  },
+  {
+    href: "#",
+    image: "/maillots/maillot-third-abc.jpg",
+    tags: ["Tenues officielles"],
+    title: "Maillot Third ABC",
   },
 ];
 

@@ -2,21 +2,19 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const players = [
-  { number: 27, position: "—", name: "Yann Zebihi",          img: "/players/masculine/Nadir-990x990.png" },
-  { number: 20, position: "—", name: "Tidiane Koné",          img: "/players/masculine/Leo-990x990.png" },
-  { number: 10, position: "—", name: "Siré Dieng",            img: "/players/masculine/Justin-1-990x990.png" },
-  { number: 14, position: "—", name: "Prince Doffou",         img: "/players/masculine/Seba-990x990.png" },
-  { number: 0,  position: "—", name: "Pierre Marie Bationo",  img: "/players/masculine/Jared-1-990x990.png" },
-  { number: 12, position: "—", name: "Moussa Koné",           img: "/players/masculine/Lamar-1-990x990.png" },
-  { number: 6,  position: "—", name: "Marc Laurel Yao",       img: "https://parisbasketball.com/wp-content/uploads/2025/09/Ilia-990x990.png" },
-  { number: 21, position: "—", name: "Malick Souaré",         img: "https://parisbasketball.com/wp-content/uploads/2025/09/Joel-990x990.png" },
-  { number: 8,  position: "—", name: "Ismael Diarra",         img: "https://parisbasketball.com/wp-content/uploads/2025/09/Allan-1-990x990.png" },
-  { number: 17, position: "—", name: "Hamadou Sylla",         img: "https://parisbasketball.com/wp-content/uploads/2025/09/Momo-1-990x990.png" },
-  { number: 10, position: "—", name: "Elias Disu",            img: "https://parisbasketball.com/wp-content/uploads/2025/09/Enzo-1-990x990.png" },
-  { number: 18, position: "—", name: "Christ Ariel Konan",    img: "https://parisbasketball.com/wp-content/uploads/2025/09/Jeremy-990x990.png" },
-  { number: 2,  position: "—", name: "Aboubakar Diene",       img: "https://parisbasketball.com/wp-content/uploads/2025/09/Amathe-990x990.png" },
-  { number: 0,  position: "—", name: "Ibrahim Magassa",       img: "https://parisbasketball.com/wp-content/uploads/2025/09/Yak-1-990x990.png" },
-  { number: 0,  position: "—", name: "Ibrahim Sevede",        img: "https://parisbasketball.com/wp-content/uploads/2025/09/Derek-990x990.png" },
+  { number: 27, position: "—", name: "Yann Zebihi",          img: "/players/masculine/abc/27.png" },
+  { number: 20, position: "—", name: "Tidiane Koné",          img: "/players/masculine/abc/20.png" },
+  { number: 10, position: "—", name: "Siré Dieng",            img: "/players/masculine/abc/10-dieng.png" },
+  { number: 14, position: "—", name: "Prince Doffou",         img: "/players/masculine/abc/14.png" },
+  { number: 0,  position: "—", name: "Pierre Marie Bationo",  img: "/players/masculine/abc/0.png" },
+  { number: 12, position: "—", name: "Moussa Koné",           img: "/players/masculine/abc/12.png" },
+  { number: 6,  position: "—", name: "Marc Laurel Yao",       img: "/players/masculine/abc/6.png" },
+  { number: 21, position: "—", name: "Malick Souaré",         img: "/players/masculine/abc/21.png" },
+  { number: 8,  position: "—", name: "Ismael Diarra",         img: "/players/masculine/abc/8.png" },
+  { number: 17, position: "—", name: "Hamadou Sylla",         img: "/players/masculine/abc/17.png" },
+  { number: 10, position: "—", name: "Elias Disu",            img: "/players/masculine/abc/10-elias.png" },
+  { number: 18, position: "—", name: "Christ Ariel Konan",    img: "/players/masculine/abc/18.png" },
+  { number: 2,  position: "—", name: "Aboubakar Diene",       img: "/players/masculine/abc/2.png" },
 ];
 
 export default function EffectifMasculinPage() {

@@ -16,7 +16,7 @@ const mobileMenuItems = [
 export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
   return (
     <>
-      <div id="mobile-nav" className={`sidenav${isOpen ? " active" : ""}`}>
+      <div id="mobile-nav" className="sidenav" style={{ transform: isOpen ? "translateX(0)" : "translateX(-105%)", transition: "transform 0.3s ease" }}>
         <div className="flex-columns">
           <div className="nav">
             <button onClick={onClose} className="sidenav-close btn white" aria-label="fermer">
