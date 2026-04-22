@@ -14,7 +14,7 @@ const leftMenuItems: { label: string; href: string; sub?: { label: string; href:
       { label: "Équipe Première Masculine", href: "/effectif-masculin" },
     ],
   },
-  { label: "Formation", href: "https://parisbasketball.com/presentation-centre-de-formation/" },
+  // { label: "Formation", href: "https://parisbasketball.com/presentation-centre-de-formation/" },
 ];
 
 const megaMenuItems = [

@@ -4,8 +4,8 @@ export default function NewsSection() {
       <div className="title flex-columns medium-flex">
         <h2>Nos actualités</h2>
         <div className="all">
-          <a href="https://www.facebook.com/AbidjanFighters/" className="btn white arrow" target="_blank" rel="noopener">
-            Suivez-nous
+          <a href="/actualites" className="btn white arrow" rel="noopener">
+            Tout voir
           </a>
         </div>
       </div>

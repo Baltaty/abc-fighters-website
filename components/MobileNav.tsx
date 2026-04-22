@@ -10,7 +10,7 @@ const mobileMenuItems = [
   { label: "Le Club", href: "/histoire" },
   { label: "Équipe Première Féminine", href: "/effectif-feminin" },
   { label: "Équipe Première Masculine", href: "/effectif-masculin" },
-  { label: "Formation", href: "#" },
+  // { label: "Formation", href: "#" },
 ];
 
 export default function MobileNav({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {

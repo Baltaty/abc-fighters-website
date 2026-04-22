@@ -1,5 +1,3 @@
-"use client";
-import { useState } from "react";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import NextGameCounter from "@/components/NextGameCounter";
@@ -8,27 +6,38 @@ import NewsSection from "@/components/NewsSection";
 import ShopSection from "@/components/ShopSection";
 import NewsletterForm from "@/components/NewsletterForm";
 import Footer from "@/components/Footer";
-import GameAlertModal from "@/components/GameAlertModal";
+import HomeClient from "@/components/HomeClient";
+import BouncingBasketball from "@/components/BouncingBasketball";
+import { client } from "@/sanity/lib/client";
 
-export default function Home() {
-  const [gameAlertOpen, setGameAlertOpen] = useState(false);
+export const revalidate = 60;
+
+const matchesQuery = `*[_type == "match"] | order(date asc) {
+  _id, competition, date, domicile, exterieur, lieu, lienBilletterie,
+  lienDiffusion,
+  "logoDomicileUrl": logoDomicile.asset->url,
+  "logoExterieurUrl": logoExterieur.asset->url
+}`;
+
+export default async function Home() {
+  const matches = await client.fetch(matchesQuery);
 
   return (
     <>
       <Header />
-      <GameAlertModal isOpen={gameAlertOpen} onClose={() => setGameAlertOpen(false)} />
+      <HomeClient />
 
       <main className="page">
         <HeroSection />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
-        <NextGameCounter />
+        <NextGameCounter matches={matches} />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
         <div className="title-cta alignstretch center-align">
-          <span className="p-icon"></span>
+          <BouncingBasketball />
           <div className="title">LES DANGÔRÔS D&apos;ABIDJAN</div>
           <div className="flex-columns small-flex">
             <a href="/histoire" className="btn white arrow">
@@ -39,26 +48,11 @@ export default function Home() {
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
-        <MatchesSlider />
+        <MatchesSlider matches={matches} />
 
         <NewsSection />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
-
-        <div className="p4p-cta alignstretch center-align">
-          <h2>
-            Abidjan<span className="icon icon-pbb-icon"></span>
-            <br /> <strong>Basketball Club</strong>
-          </h2>
-          <div className="flex-columns small-flex">
-            <a href="#" className="btn white arrow">
-              Billetterie
-            </a>
-            <a href="#" className="btn white arrow">
-              Boutique
-            </a>
-          </div>
-        </div>
 
         <ShopSection />
 
