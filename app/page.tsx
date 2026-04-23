@@ -61,7 +61,7 @@ export default async function Home() {
 
         <NewsSection articles={articles.map((a: {image?: object} & Record<string, unknown>) => ({
           ...a,
-          imageUrl: a.image ? urlFor(a.image).width(990).height(557).fit("crop").auto("format").url() : undefined,
+          imageUrl: a.image ? urlFor(a.image).width(990).height(557).fit("max").auto("format").url() : undefined,
         }))} />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>

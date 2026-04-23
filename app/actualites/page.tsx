@@ -37,7 +37,7 @@ export default async function ActualitesPage() {
             <div className="flex-columns medium-flex featured-news" style={{ marginTop: 40 }}>
               {articles.map((a) => {
                 const imageUrl = a.image
-                  ? urlFor(a.image).width(990).height(557).fit("crop").auto("format").url()
+                  ? urlFor(a.image).width(990).height(557).fit("max").auto("format").url()
                   : undefined;
                 return (
                   <div key={a._id} className="news-card featured">
