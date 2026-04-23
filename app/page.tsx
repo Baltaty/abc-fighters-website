@@ -9,6 +9,7 @@ import Footer from "@/components/Footer";
 import HomeClient from "@/components/HomeClient";
 import BouncingBasketball from "@/components/BouncingBasketball";
 import { client } from "@/sanity/lib/client";
+import { urlFor } from "@/sanity/lib/image";
 
 export const revalidate = 60;
 
@@ -21,7 +22,7 @@ const matchesQuery = `*[_type == "match"] | order(date asc) {
 
 const newsQuery = `*[_type == "actualite"] | order(date desc) [0...3] {
   _id, titre, slug, date, categorie, resume,
-  "imageUrl": image.asset->url
+  image
 }`;
 
 export default async function Home() {
@@ -58,13 +59,16 @@ export default async function Home() {
 
         <MatchesSlider matches={matches} />
 
-        <NewsSection articles={articles} />
+        <NewsSection articles={articles.map((a: {image?: object} & Record<string, unknown>) => ({
+          ...a,
+          imageUrl: a.image ? urlFor(a.image).width(990).height(557).fit("crop").auto("format").url() : undefined,
+        }))} />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
         <ShopSection />
 
-        <NewsletterForm />
+        {/* <NewsletterForm /> */}
       </main>
 
       <Footer />

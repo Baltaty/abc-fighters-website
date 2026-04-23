@@ -69,11 +69,11 @@ export default function NextGameCounter({ matches }: { matches: Match[] }) {
             </div>
           </div>
         )}
-        <div className="link">
+        {/* <div className="link">
           <a href={nextMatch?.lienBilletterie ?? "#"} aria-label="Billetterie">
             <span className="icon icon-arrow-right"></span>
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -59,11 +59,11 @@ export default function MatchesSlider({ matches }: { matches: Match[] }) {
                   <a href={match.lienDiffusion.href} target="_blank" rel="noopener">{match.lienDiffusion.label}</a>
                 </div>
               )}
-              <div className="buttons">
+              {/* <div className="buttons">
                 <div>
                   <a href={match.lienBilletterie || "#"} className="btn white arrow">Billetterie</a>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

@@ -16,7 +16,6 @@ const col1Links = [
 ];
 
 const col2Links = [
-  { label: "Billetterie", href: "#" },
   { label: "Boutique", href: "#" },
   { label: "Actualités", href: "#" },
 ];
