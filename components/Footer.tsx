@@ -3,7 +3,7 @@ const partners = [
   { name: "Cosmos",       href: "#",                                      img: "/partners-abc/cosmos.png" },
   { name: "Yango",        href: "https://yango.com/",                    img: "/partners-abc/yango.png" },
   { name: "Omega Sports", href: "https://omegasportsholding.com/",       img: "/partners-abc/omegasport.png" },
-  { name: "Flexx",        href: "https://flexxnow.com/",                 img: "/partners-abc/flexx.png" },
+  { name: "FLEXX",        href: "https://flexxnow.com/",                 img: "/partners-abc/flexx.png" },
   { name: "Lapaire",      href: "https://en-bj.lapaire.africa/",         img: "/partners-abc/lapaire.png" },
 ];
 
@@ -116,8 +116,8 @@ export default function Footer() {
         </div>
 
         <p className="delacreme center-align">
-          Fait avec <span className="icon icon-heart"></span> par{" "}
-          <a href="https://www.delacreme.pro/">DeLaCrème - Agence digitale créative</a>
+          Copyright {new Date().getFullYear()} Abidjan Basketball Club. Réalisé par{" "}
+          <a href="https://www.linkedin.com/in/fabrice-tra-540280126/" target="_blank" rel="noopener">LaunchLoop Studios</a>.
         </p>
       </div>
     </footer>
