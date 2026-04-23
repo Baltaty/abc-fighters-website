@@ -16,14 +16,14 @@ const col1Links = [
 ];
 
 const col2Links = [
-  { label: "Boutique", href: "#" },
-  { label: "Actualités", href: "#" },
+  { label: "Boutique", href: "https://flexxnow.com" },
+  { label: "Actualités", href: "/actualites" },
 ];
 
 const col3Links = [
-  { label: "Contact", href: "#" },
-  { label: "Confidentialité", href: "#" },
-  { label: "Mentions légales", href: "#" },
+  { label: "Contact", href: "/contact" },
+  { label: "Confidentialité", href: "/confidentialite" },
+  { label: "Mentions légales", href: "/mentions-legales" },
 ];
 
 const socialLinks = [

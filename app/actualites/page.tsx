@@ -4,7 +4,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
 const query = `*[_type == "actualite"] | order(date desc) {
-  _id, titre, slug, date, categorie, resume, image
+  _id, titre, slug, date, "categorie": categorie->titre, resume, image
 }`;
 
 export const revalidate = 60;

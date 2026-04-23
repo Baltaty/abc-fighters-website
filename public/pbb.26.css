@@ -3309,6 +3309,7 @@ body.mega-open {
   margin: 15px 0;
   position: relative;
   padding: 30px 30px 100px;
+  border-radius: 20px;
 }
 .match-card .competition-date {
   margin-bottom: 8px;
@@ -4291,6 +4292,7 @@ table.standings .logo {
   font-size: 2em;
   line-height: 1.2em;
   text-align: center;
+  border-radius: 50px;
 }
 .pbb-block.next-game-counter em {
   font-style: normal;

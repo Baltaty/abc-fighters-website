@@ -21,7 +21,7 @@ const matchesQuery = `*[_type == "match"] | order(date asc) {
 }`;
 
 const newsQuery = `*[_type == "actualite"] | order(date desc) [0...3] {
-  _id, titre, slug, date, categorie, resume,
+  _id, titre, slug, date, "categorie": categorie->titre, resume,
   image
 }`;
 
@@ -38,8 +38,6 @@ export default async function Home() {
 
       <main className="page">
         <HeroSection />
-
-        <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
         <NextGameCounter matches={matches} />
 

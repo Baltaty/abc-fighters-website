@@ -34,7 +34,7 @@ export default function MatchesSlider({ matches }: { matches: Match[] }) {
           {items.map((match) => (
             <div key={match._id} className="embla__slide match-card center-align">
               <div className="competition-date">
-                <strong>{match.competition}</strong>{" "}
+                <strong>{match.competition}</strong> <br/>
                 {match.date && new Date(match.date).toLocaleDateString("fr-FR", { weekday: "short", day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" })}
               </div>
               <div className="logos">
@@ -50,7 +50,7 @@ export default function MatchesSlider({ matches }: { matches: Match[] }) {
               </div>
               {match.lieu && (
                 <div className="stadium">
-                  <span className="icon icon-location"></span>{match.lieu}
+                  <span className="icon icon-location"></span>{" "}{match.lieu}
                 </div>
               )}
               {match.lienDiffusion && (
