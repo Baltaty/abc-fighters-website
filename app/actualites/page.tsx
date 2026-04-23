@@ -21,6 +21,8 @@ type Article = {
 
 export default async function ActualitesPage() {
   const articles: Article[] = await client.fetch(query);
+  const featured = articles.slice(0, 2);
+  const rest = articles.slice(2);
 
   return (
     <>
@@ -34,29 +36,58 @@ export default async function ActualitesPage() {
           {articles.length === 0 ? (
             <p style={{ textAlign: "center", padding: "60px 0", opacity: 0.5 }}>Aucune actualité pour le moment.</p>
           ) : (
-            <div className="flex-columns medium-flex featured-news" style={{ marginTop: 40 }}>
-              {articles.map((a) => {
-                const imageUrl = a.image
-                  ? urlFor(a.image).width(990).height(557).fit("max").auto("format").url()
-                  : undefined;
-                return (
-                  <div key={a._id} className="news-card featured">
-                    {imageUrl && (
-                      <div className="image">
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img src={imageUrl} alt={a.titre} className="responsive-img" width={990} height={557} />
+            <>
+              {/* 2 premières en grand, côte à côte */}
+              <div className="actu-grid-featured">
+                {featured.map((a) => {
+                  const imageUrl = a.image
+                    ? urlFor(a.image).width(655).height(532).fit("max").auto("format").url()
+                    : undefined;
+                  return (
+                    <a key={a._id} href={`/actualites/${a.slug.current}`} className="actu-card actu-card--large">
+                      {imageUrl && (
+                        <div className="actu-card__image">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img src={imageUrl} alt={a.titre} width={655} height={532} />
+                        </div>
+                      )}
+                      <div className="actu-card__content">
+                        {a.categorie && <span className="btn white">{a.categorie}</span>}
+                        <h3>{a.titre}</h3>
+                        {a.resume && <p>{a.resume}</p>}
+                        <div className="date">{new Date(a.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}</div>
                       </div>
-                    )}
-                    <div className="content">
-                      {a.categorie && <div className="tags"><span className="btn white">{a.categorie}</span></div>}
-                      <h3 className="post-title">{a.titre}</h3>
-                      {a.resume && <p>{a.resume}</p>}
-                      <div className="date">{new Date(a.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}</div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
+                    </a>
+                  );
+                })}
+              </div>
+
+              {/* Reste : 3 par ligne en petit */}
+              {rest.length > 0 && (
+                <div className="actu-grid-rest">
+                  {rest.map((a) => {
+                    const imageUrl = a.image
+                      ? urlFor(a.image).width(433).height(258).fit("max").auto("format").url()
+                      : undefined;
+                    return (
+                      <a key={a._id} href={`/actualites/${a.slug.current}`} className="actu-card actu-card--small">
+                        {imageUrl && (
+                          <div className="actu-card__image">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={imageUrl} alt={a.titre} width={433} height={258} />
+                          </div>
+                        )}
+                        <div className="actu-card__content">
+                          {a.categorie && <span className="btn white">{a.categorie}</span>}
+                          <h3>{a.titre}</h3>
+                          <div className="date">{new Date(a.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}</div>
+                        </div>
+                      </a>
+                    );
+                  })}
+                </div>
+              )}
+            </>
           )}
         </div>
       </main>
