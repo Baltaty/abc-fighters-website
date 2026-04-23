@@ -19,8 +19,16 @@ const matchesQuery = `*[_type == "match"] | order(date asc) {
   "logoExterieurUrl": logoExterieur.asset->url
 }`;
 
+const newsQuery = `*[_type == "actualite"] | order(date desc) [0...3] {
+  _id, titre, slug, date, categorie, resume,
+  "imageUrl": image.asset->url
+}`;
+
 export default async function Home() {
-  const matches = await client.fetch(matchesQuery);
+  const [matches, articles] = await Promise.all([
+    client.fetch(matchesQuery),
+    client.fetch(newsQuery),
+  ]);
 
   return (
     <>
@@ -50,7 +58,7 @@ export default async function Home() {
 
         <MatchesSlider matches={matches} />
 
-        <NewsSection />
+        <NewsSection articles={articles} />
 
         <div style={{ height: 100 }} aria-hidden="true" className="wp-block-spacer"></div>
 
