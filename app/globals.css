@@ -67,10 +67,19 @@ h1, h2, h3, h4, h5, h6,
   opacity: 1;
 }
 
+.pattern-strip-bar {
+  width: 100%;
+  height: 20px;
+  background-image: url(/pattern-strip.svg);
+  background-repeat: repeat-x;
+  background-size: auto 20px;
+}
+.partners-ticker-wrap {
+  margin-bottom: 40px;
+}
 .partners-ticker {
   overflow: hidden;
   background: #d90502;
-  margin-bottom: 40px;
 }
 .partners-ticker__track {
   display: flex;

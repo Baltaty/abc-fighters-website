@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MobileNav from "@/components/MobileNav";
@@ -95,6 +95,13 @@ const megaMenuItems = [
 
 export default function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    function onScroll() { setScrolled(window.scrollY > 10); }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
@@ -181,10 +188,12 @@ export default function Header() {
         aria-hidden="true"
         style={{
           width: "100%",
-          height: "30px",
+          height: scrolled ? "0px" : "20px",
           backgroundImage: "url(/pattern-strip.svg)",
           backgroundRepeat: "repeat-x",
-          backgroundSize: "auto 30px",
+          backgroundSize: "auto 20px",
+          overflow: "hidden",
+          transition: "height 0.3s ease",
         }}
       />
     </header>

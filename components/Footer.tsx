@@ -36,7 +36,9 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="page-footer">
-      <div className="partners-ticker">
+      <div className="partners-ticker-wrap">
+        <div aria-hidden="true" className="pattern-strip-bar" />
+        <div className="partners-ticker">
         <div className="partners-ticker__track">
           {[...partners, ...partners, ...partners, ...partners].map((p, i) => (
             <a key={i} href={p.href} target="_blank" rel="noopener" title={p.name} className="partners-ticker__item">
@@ -45,6 +47,8 @@ export default function Footer() {
             </a>
           ))}
         </div>
+      </div>
+        <div aria-hidden="true" className="pattern-strip-bar" />
       </div>
       <div className="alignwide">
         <div className="flex-columns">
