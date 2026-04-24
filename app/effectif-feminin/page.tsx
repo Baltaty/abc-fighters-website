@@ -2,18 +2,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const players = [
-  { number: 18, position: "—", name: "Stéphanie Lago",       img: "/players/feminine/2-1-990x990.png" },
-  { number: 9,  position: "—", name: "Salimata Berthé",      img: "/players/feminine/3-1-990x990.png" },
-  { number: 14, position: "—", name: "Adjidjata Traoré",     img: "/players/feminine/6-1-990x990.png" },
-  { number: 8,  position: "—", name: "Coumba Diarrasouba",   img: "/players/feminine/9-1-990x990.png" },
-  { number: 7,  position: "—", name: "Fadila Ouelgo",        img: "/players/feminine/10-990x990.png" },
-  { number: 2,  position: "—", name: "Fatoumata Samaké",     img: "/players/feminine/13-1-990x990.png" },
-  { number: 10, position: "—", name: "Ferima Coulibaly",     img: "https://parisbasketball.com/wp-content/uploads/2025/02/jsp-990x990.png" },
-  { number: 17, position: "—", name: "Masandje Diaby",       img: "https://parisbasketball.com/wp-content/uploads/2025/02/22-1-990x990.png" },
-  { number: 15, position: "—", name: "Ramatou Dissa",        img: "https://parisbasketball.com/wp-content/uploads/2025/02/24-1-990x990.png" },
-  { number: 3,  position: "—", name: "Reine Esther Yao",     img: "https://parisbasketball.com/wp-content/uploads/2025/02/99-1-990x990.png" },
-  { number: 4,  position: "—", name: "Safietou Kolga",       img: "/players/feminine/2-1-990x990.png" },
-  { number: 0,  position: "—", name: "Abigail Isaac",        img: "/players/feminine/3-1-990x990.png" },
+  { number: 18, position: "—", name: "Stéphanie Lago",      img: "/players/feminine/18.png" },
+  { number: 9,  position: "—", name: "Salimata Berthé",     img: "/players/feminine/9.png" },
+  { number: 14, position: "—", name: "Adjidjata Traoré",    img: "/players/feminine/14.png" },
+  { number: 8,  position: "—", name: "Coumba Diarrasouba",  img: "/players/feminine/8.png" },
+  { number: 7,  position: "—", name: "Fadila Ouelgo",       img: "/players/feminine/7.png" },
+  { number: 2,  position: "—", name: "Fatoumata Samaké",    img: "/players/feminine/2.png" },
+  { number: 10, position: "—", name: "Ferima Coulibaly",    img: "/players/feminine/10.png" },
+  { number: 17, position: "—", name: "Masandje Diaby",      img: "/players/feminine/17.png" },
+  { number: 15, position: "—", name: "Ramatou Dissa",       img: "/players/feminine/15.png" },
+  { number: 3,  position: "—", name: "Reine Esther Yao",    img: "/players/feminine/3.png" },
+  { number: 4,  position: "—", name: "Safietou Kolga",      img: "/players/feminine/4.png" },
 ];
 
 export default function EffectifFemininPage() {

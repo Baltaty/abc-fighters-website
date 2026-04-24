@@ -3506,13 +3506,16 @@ body.mega-open {
   bottom: 0;
   width: 100%;
   height: auto;
+  border-radius: 20px;
+  
 }
 .player-card .number {
   font-size: 106px;
   line-height: 1em;
   font-family: var(--font-slam-dunk), sans-serif;
   margin: 20px 30px;
-  opacity: .1;
+  opacity: 1;
+  color: #d90502;
 }
 .player-card .data {
   position: absolute;

@@ -176,6 +176,17 @@ export default function Header() {
           </ul>
         </div>
       </div>
+
+      <div
+        aria-hidden="true"
+        style={{
+          width: "100%",
+          height: "30px",
+          backgroundImage: "url(/pattern-strip.svg)",
+          backgroundRepeat: "repeat-x",
+          backgroundSize: "auto 30px",
+        }}
+      />
     </header>
     </>
   );
