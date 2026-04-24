@@ -22,7 +22,7 @@ export default function ContactPage() {
                 </li>
                 <li>
                   <span className="icon icon-mail"></span>
-                  <a href="mailto:contact@abidjanbc.com">contact@abidjanbc.com</a>
+                  <a href="mailto:contact@abidjanbasketballclub.com">contact@abidjanbasketballclub.com</a>
                 </li>
               </ul>
               <div className="contact-socials">

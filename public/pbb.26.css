@@ -4018,7 +4018,7 @@ div.paris-pour-paris img {
   content: "";
   width: 150px;
   height: 150px;
-  background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/p-paris.png') no-repeat center center;
+  background: url('/abc.svg') no-repeat center center;
   background-size: contain;
   margin: 0 auto 30px;
 }

@@ -19,76 +19,24 @@ const leftMenuItems: { label: string; href: string; sub?: { label: string; href:
 
 const megaMenuItems = [
   {
-    label: "Équipe Première",
+    label: "Équipes",
     sub: [
-      { label: "Calendrier", href: "https://parisbasketball.com/calendrier-equipe-premiere/" },
-      { label: "Effectif", href: "https://parisbasketball.com/effectif-equipe-premiere/" },
-      { label: "Classement Betclic Elite", href: "https://parisbasketball.com/classement-betclic-elite/" },
-      { label: "Classement EuroLeague", href: "https://parisbasketball.com/classement-euroleague/" },
-    ],
-  },
-  {
-    label: "Section féminine",
-    sub: [
-      { label: "Présentation", href: "https://parisbasketball.com/presentation-section-feminine/" },
-      { label: "Effectif", href: "https://parisbasketball.com/effectif-section-feminine/" },
-    ],
-  },
-  {
-    label: "Centre de Formation",
-    sub: [
-      { label: "Présentation", href: "https://parisbasketball.com/presentation-centre-de-formation/" },
-      { label: "La vie au centre", href: "https://parisbasketball.com/la-vie-au-centre/" },
-      { label: "Effectif", href: "https://parisbasketball.com/effectif-centre-de-formation/" },
-      { label: "Camps", href: "https://parisbasketball.com/camps/" },
+      { label: "Équipe Masculine", href: "/effectif-masculin" },
+      { label: "Équipe Féminine", href: "/effectif-feminin" },
     ],
   },
   {
     label: "Le Club",
     sub: [
-      { label: "Actualités", href: "https://parisbasketball.com/actualites/" },
-      { label: "Histoire", href: "https://parisbasketball.com/histoire-du-club/" },
-      { label: "Foundation", href: "https://parisbasketball.com/paris-basketball-foundation/" },
-      { label: "Parisii", href: "https://parisbasketball.com/kop-parisii/" },
-      { label: "Volontaires", href: "https://parisbasketball.com/volontaires/" },
-      { label: "Contact", href: "https://parisbasketball.com/contact/" },
-    ],
-  },
-  {
-    label: "Offres Grand Public",
-    sub: [
-      { label: "Abonnement 25/26", href: "https://parisbasketball.com/grand-public-abonnement/" },
-      { label: "CSE & Collectivités", href: "https://parisbasketball.com/grand-public-cse-collectivites/" },
-      { label: "Clubs & Associations", href: "https://parisbasketball.com/grand-public-clubs-associations/" },
-      { label: "Étudiants & Écoles", href: "https://parisbasketball.com/grand-public-etudiants-ecoles/" },
-      { label: "FAQ", href: "https://parisbasketball.com/billetterie/faq-abonnements/" },
-    ],
-  },
-  {
-    label: "Offres Hospitalités",
-    sub: [
-      { label: "Courtside Club", href: "https://parisbasketball.com/hospitalites-courtside-club/" },
-      { label: "Central House", href: "https://parisbasketball.com/hospitalites-central-house/" },
-      { label: "Suites", href: "https://parisbasketball.com/hospitalites-suites/" },
-      { label: "FAQ", href: "https://parisbasketball.com/billetterie/faq-hospitalites/" },
-    ],
-  },
-  {
-    label: "Adidas Arena",
-    sub: [
-      { label: "Accès et informations", href: "https://parisbasketball.com/acces-adidas-arena/" },
-      { label: "Arena Tour", href: "https://parisbasketball.com/arena-tour/" },
-      { label: "Événements et séminaires", href: "https://parisbasketball.com/evenements-et-seminaires/" },
-      { label: "Entertainment", href: "https://parisbasketball.com/entertainment-adidas-arena/" },
-      { label: "FAQ", href: "https://parisbasketball.com/billetterie/faq-infos-pratiques/" },
+      { label: "Histoire", href: "/histoire" },
+      { label: "Actualités", href: "/actualites" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
     label: "Partenaires",
     sub: [
-      { label: "Nos partenaires", href: "https://parisbasketball.com/nos-partenaires/" },
-      { label: "Devenir partenaire", href: "https://parisbasketball.com/devenir-partenaire/" },
-      { label: "Business Club", href: "https://parisbasketball.com/business-club/" },
+      { label: "Nos partenaires", href: "/partenaires" },
     ],
   },
 ];
