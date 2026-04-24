@@ -48,7 +48,7 @@ export default async function Home() {
           <div className="title">LES DANGÔRÔS D&apos;ABIDJAN</div>
           <div className="flex-columns small-flex">
             <a href="/histoire" className="btn white arrow">
-              Découvrir le club
+              Découvrir notre histoire
             </a>
           </div>
         </div>
