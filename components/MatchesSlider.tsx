@@ -30,6 +30,7 @@ export default function MatchesSlider({ matches }: { matches: Match[] }) {
   return (
     <section className="pbb-block matchs-upcoming alignwide flickity-enabled" id="schedule" style={{ position: "relative" }}>
       <div className="matchs-slider embla" ref={emblaRef}>
+        <h2>Prochains Matchs</h2>
         <div className="embla__container">
           {items.map((match) => (
             <div key={match._id} className="embla__slide match-card center-align">
