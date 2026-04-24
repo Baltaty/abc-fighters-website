@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "Fondé en 1997, l'Abidjan Basketball Club (ABC) est 19 fois champion de Côte d'Ivoire chez les hommes et 10 fois chez les femmes. Équipe, actualités, partenaires.",
   openGraph: {
-    title: "Abidjan Basketball Club - Le club de basket de référence en Côte d'Ivoire",
+    title: "Abidjan Basketball Club - The Fighters",
     description:
       "Fondé en 1997, l'Abidjan Basketball Club (ABC) est 19 fois champion de Côte d'Ivoire chez les hommes et 10 fois chez les femmes.",
     url: "https://abidjanbasketballclub.com/",
