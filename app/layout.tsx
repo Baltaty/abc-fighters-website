@@ -37,10 +37,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr-FR">
+    <html lang="fr-FR" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
-        <link rel="icon" href="/abc-logo-white.svg" type="image/svg+xml" />
+        <link rel="icon" href="/abc.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="/pbb.26.css" />
         <link rel="stylesheet" href="/flickity.css" media="screen" />
       </head>

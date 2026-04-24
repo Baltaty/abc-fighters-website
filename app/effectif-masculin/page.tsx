@@ -25,7 +25,7 @@ export default function EffectifMasculinPage() {
       <main className="page">
         <section className="pbb-block team-staff alignwide">
           <h1 className="center-align shadow-title">
-            Effectif <strong>Abidjan Basketball Club</strong>
+            <strong>Effectif</strong> Équipe Masculine
           </h1>
           <div className="team flex-columns medium-flex">
             {players.map((player, i) => (

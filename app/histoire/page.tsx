@@ -14,14 +14,14 @@ export default function HistoirePage() {
         </section>
 
         <div className="alignwide" style={{ padding: "0 0 80px" }}>
-          <figure className="wp-block-image size-medium">
+          <figure className="wp-block-image size-medium" style={{ margin: "40px 0" }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/histoire/histoire_paris_basketball-990x550.jpg"
-              alt="Histoire Abidjan Basketball Club"
+              src="/histoire/archive-abc.jpg"
+              alt="Archives Abidjan Basketball Club"
               width={990}
               height={550}
-              className="wp-image"
+              style={{ width: "100%", height: "auto", display: "block" }}
               loading="eager"
             />
           </figure>

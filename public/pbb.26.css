@@ -3783,7 +3783,6 @@ div.paris-pour-paris img {
 }
 .pbb-block.page-title.has-submenu .intro {
   font-size: 18px;
-  font-weight: 700;
 }
 .pbb-block.page-title.has-submenu .page-menu {
   gap: 30px;
@@ -4213,6 +4212,7 @@ table.standings .logo {
   padding: 10px;
   display: flex;
   align-items: center;
+  border-radius: 20px;
 }
 .pbb-block.boxed-cards {
   padding: 60px 0;

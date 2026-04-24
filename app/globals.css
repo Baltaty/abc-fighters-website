@@ -69,8 +69,7 @@ h1, h2, h3, h4, h5, h6,
 
 .partners-ticker {
   overflow: hidden;
-  background: #181818;
-  padding: 20px 0;
+  background: #d90502;
   margin-bottom: 40px;
 }
 .partners-ticker__track {
@@ -86,7 +85,7 @@ h1, h2, h3, h4, h5, h6,
   display: flex;
   align-items: center;
   padding: 0 50px;
-  opacity: 0.7;
+  
   transition: opacity 0.2s;
 }
 .partners-ticker__item:hover {

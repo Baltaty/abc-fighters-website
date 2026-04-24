@@ -23,7 +23,7 @@ export default function PartenairesPage() {
       <main className="page">
         <section className="pbb-block page-title alignstretch has-submenu buttons-submenu center-align">
           <h1 className="shadow-title">
-            <strong>Nos partenaires</strong> Abidjan Basketball Club
+            <strong>Nos partenaires</strong>
           </h1>
           <div className="intro">
             Plusieurs entreprises soutiennent l&apos;ambition de l&apos;Abidjan Basketball Club et participent au développement
