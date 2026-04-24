@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://abidjanbasketballclub.com/og-image.png",
+        url: "https://abidjanbasketballclub.com/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Abidjan Basketball Club",
