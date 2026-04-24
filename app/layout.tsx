@@ -12,7 +12,7 @@ const slamDunk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Abidjan Basketball Club - Le club de basket de référence en Côte d'Ivoire",
+  title: "Abidjan Basketball Club - The Fighters",
   description:
     "Fondé en 1997, l'Abidjan Basketball Club (ABC) est 19 fois champion de Côte d'Ivoire chez les hommes et 10 fois chez les femmes. Équipe, actualités, partenaires.",
   openGraph: {
@@ -48,6 +48,7 @@ export default function RootLayout({
     <html lang="fr-FR" suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.0" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/abc.svg" type="image/svg+xml" />
         <link rel="stylesheet" href="/pbb.26.css" />
         <link rel="stylesheet" href="/flickity.css" media="screen" />
