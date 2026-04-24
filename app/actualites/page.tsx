@@ -7,7 +7,7 @@ const query = `*[_type == "actualite"] | order(date desc) {
   _id, titre, slug, date, "categorie": categorie->titre, resume, image
 }`;
 
-export const revalidate = 60;
+export const revalidate = false;
 
 type Article = {
   _id: string;

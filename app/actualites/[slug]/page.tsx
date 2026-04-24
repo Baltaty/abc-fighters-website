@@ -5,7 +5,7 @@ import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 import { PortableText } from "next-sanity";
 
-export const revalidate = 60;
+export const revalidate = false;
 
 const query = `*[_type == "actualite" && slug.current == $slug][0] {
   _id, titre, slug, date, "categorie": categorie->titre, resume, image, contenu

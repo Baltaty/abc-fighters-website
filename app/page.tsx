@@ -11,7 +11,7 @@ import BouncingBasketball from "@/components/BouncingBasketball";
 import { client } from "@/sanity/lib/client";
 import { urlFor } from "@/sanity/lib/image";
 
-export const revalidate = 60;
+export const revalidate = false;
 
 const matchesQuery = `*[_type == "match"] | order(date asc) {
   _id, competition, date, domicile, exterieur, lieu, lienBilletterie,
