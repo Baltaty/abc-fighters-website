@@ -2607,7 +2607,7 @@ main.error-404 {
 }
 main.error-404 .wrapper {
   padding: 60px 0;
-  background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: url('/basketball-ball-black-background.png') no-repeat center center;
   background-size: contain;
 }
 main.error-404 .wrapper h1 {
@@ -3091,7 +3091,7 @@ body.mega-open {
     display: flex;
     flex-wrap: wrap;
     padding: 20px 0 50px;
-    background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+    background: url('/basketball-ball-black-background.png') no-repeat center center;
     background-size: contain;
   }
   .mega-menu-wrapper .megamenu > li {
@@ -3387,7 +3387,7 @@ body.mega-open {
   font-family: var(--font-slam-dunk), sans-serif;
 }
 .match-card.upcoming-card {
-  background: #d90502 url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: #d90502 url('/basketball-ball-black-background.png') no-repeat center center;
   background-size: contain;
 }
 .match-card.upcoming-card .surtitle strong {
@@ -3766,7 +3766,7 @@ div.paris-pour-paris img {
   font-size: 106px;
   line-height: 1em;
   text-align: center;
-  background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: url('/basketball-ball-black-background.png') no-repeat center center;
   background-size: contain;
 }
 .shadow-title strong {
@@ -3776,7 +3776,7 @@ div.paris-pour-paris img {
   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
 }
 .pbb-block.page-title.has-submenu {
-  background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: url('/basketball-ball-black-background.png') no-repeat center center;
   background-size: contain;
 }
 .pbb-block.page-title.has-submenu .shadow-title {
@@ -3988,7 +3988,7 @@ div.paris-pour-paris img {
   --base: 80px;
   padding: 60px 0;
   margin: 40px auto;
-  background: url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: url('/basketball-ball-black-background.png') no-repeat center center;
   background-size: contain;
 }
 .p4p-cta h2 {
@@ -4289,7 +4289,7 @@ table.standings .logo {
   z-index: 1;
 }
 .pbb-block.next-game-counter {
-  background: #d90502 url('https://parisbasketball.com/wp-content/themes/parisbasketball/assets/img/shadow.png') no-repeat center center;
+  background: #d90502 url('/basketball-ball-black-background.png') no-repeat center center;
   padding: 20px 30px;
   font-family: var(--font-slam-dunk), sans-serif;
   font-size: 2em;
