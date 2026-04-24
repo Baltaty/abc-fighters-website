@@ -116,8 +116,8 @@ export default function Footer() {
         </div>
 
         <p className="delacreme center-align">
-          Copyright {new Date().getFullYear()} Abidjan Basketball Club. Réalisé par{" "}
-          <a href="https://www.linkedin.com/in/fabrice-tra-540280126/" target="_blank" rel="noopener">LaunchLoop Studios</a>.
+          Copyright {new Date().getFullYear()} Abidjan Basketball Club. <br /> Réalisé par{" "}
+          <a href="https://www.linkedin.com/in/fabrice-tra-540280126/" target="_blank" rel="noopener">LaunchLoop Studios 🚀</a>.
         </p>
       </div>
     </footer>

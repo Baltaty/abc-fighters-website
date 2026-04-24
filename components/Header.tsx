@@ -146,7 +146,7 @@ export default function Header() {
                 <a href="/partenaires">Nos partenaires</a>
               </li>
               <li className="menu-item">
-                <a href="https://flexxnow.com/">Boutique</a>
+                <a href="https://flexxnow.com/collections/abc-fighters">Boutique</a>
               </li>
             </ul>
             <ul className="lang-switch hide-on-small-only">

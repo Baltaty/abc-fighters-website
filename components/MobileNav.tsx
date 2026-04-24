@@ -2,8 +2,8 @@
 import Image from "next/image";
 
 const mobileButtons = [
-  { label: "Boutique", href: "#", cls: "shop" },
-  { label: "Actualités", href: "https://www.facebook.com/AbidjanFighters/", cls: "" },
+  { label: "Boutique", href: "https://flexxnow.com/collections/abc-fighters", cls: "shop" },
+  { label: "Actualités", href: "/actualites", cls: "" },
 ];
 
 const mobileMenuItems = [

@@ -3,19 +3,19 @@ import useEmblaCarousel from "embla-carousel-react";
 
 const shopItems = [
   {
-    href: "#",
+    href: "https://flexxnow.com/collections/abc-fighters",
     image: "/maillots/maillot-domicile-abc.jpg",
     tags: ["Tenues officielles"],
     title: "Maillot Domicile ABC",
   },
   {
-    href: "#",
+    href: "https://flexxnow.com/collections/abc-fighters",
     image: "/maillots/maillot-exterieur-abc.jpg",
     tags: ["Tenues officielles"],
     title: "Maillot Extérieur ABC",
   },
   {
-    href: "#",
+    href: "https://flexxnow.com/collections/abc-fighters",
     image: "/maillots/maillot-third-abc.jpg",
     tags: ["Tenues officielles"],
     title: "Maillot Third ABC",

@@ -8,6 +8,7 @@ type Match = {
   domicile: string;
   exterieur: string;
   logoDomicileUrl?: string;
+  logoExterieurUrl?: string;
   lienBilletterie?: string;
 };
 
@@ -58,7 +59,7 @@ export default function NextGameCounter({ matches }: { matches: Match[] }) {
           {nextMatch && (
             <span>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/abc.svg" alt={nextMatch.exterieur} width={200} height={200} className="attachment-logo size-logo" />
+              <img src={nextMatch?.logoExterieurUrl || "/abc.svg"}  alt={nextMatch.exterieur} width={200} height={200} className="attachment-logo size-logo" />
             </span>
           )}
         </div>
