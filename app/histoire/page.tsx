@@ -43,17 +43,18 @@ export default function HistoirePage() {
 
           <h2 className="wp-block-heading">Palmarès</h2>
 
-          <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+          <div className="palmares-grid">
             {[
-              { competition: "Championnat de Côte d'Ivoire - Hommes", titres: 19 },
-              { competition: "Championnat de Côte d'Ivoire - Dames", titres: 10 },
-              { competition: "Coupe d'Afrique des Clubs - Hommes", titres: 1, detail: "2005" },
+              { competition: "Championnat de Côte d'Ivoire", categorie: "Hommes", titres: 19 },
+              { competition: "Championnat de Côte d'Ivoire", categorie: "Dames", titres: 10 },
+              { competition: "Coupe d'Afrique des Clubs", categorie: "Hommes", titres: 1, detail: "2005" },
             ].map((item) => (
-              <div key={item.competition} className="game-info" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", background: "#181818", padding: "20px 30px", borderRadius: 4 }}>
-                <span style={{ fontFamily: "var(--font-slam-dunk)", fontSize: "1.2em" }}>{item.competition}</span>
-                <span style={{ fontFamily: "var(--font-slam-dunk)", fontSize: "2em", color: "#d90502" }}>
-                  {item.titres}× {item.detail ? `(${item.detail})` : ""}
-                </span>
+              <div key={item.competition + item.categorie} className="palmares-card">
+                <div className="palmares-card__number">
+                  {item.titres}<span>×</span>
+                </div>
+                <div className="palmares-card__label">{item.competition}</div>
+                <div className="palmares-card__categorie">{item.categorie}{item.detail ? ` — ${item.detail}` : ""}</div>
               </div>
             ))}
           </div>

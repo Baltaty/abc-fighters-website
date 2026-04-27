@@ -5,7 +5,7 @@ const sections = [
   {
     title: "Partenaires",
     partners: [
-      { name: "Betclic",      href: "https://www.betclic.com/",          img: "/partners-abc/betclic.png" },
+      { name: "Betclic",      href: "https://www.betclic.ci/",          img: "/partners-abc/betclic.png" },
       { name: "Cosmos",       href: "#",                                  img: "/partners-abc/cosmos.png" },
       { name: "Yango",        href: "https://yango.com/",                img: "/partners-abc/yango.png" },
       { name: "Omega Sports", href: "https://omegasportsholding.com/",     img: "/partners-abc/omegasport.png" },
